@@ -1,12 +1,10 @@
 import PropTypes from 'prop-types';
 // import './Statistics.css';
 import css from './Statistics.module.scss';
-// import data from '../../data/data';
-// console.log(data);
 
 const Statistics = ({ stats, title }) => {
     const statsElements = stats.map(({ id, label, percentage }) => (
-        <li key={id} className={css.stats_item}>
+        <li key={id} className={css.stats_item} style={{backgroundColor: getRandomColor()}}>
             <span className={css.stats_label}>{label}</span>
             <span className={css.stats_percentage}>{percentage}%</span>
         </li>));
@@ -19,7 +17,6 @@ const Statistics = ({ stats, title }) => {
         </section>
     )
 };
-
 export default Statistics;
 
 Statistics.defaultProps = { stats: [] };
@@ -31,7 +28,7 @@ Statistics.propTypes = {
     }))
 };
 
-function getRandomColor() {
+export function getRandomColor() {
     const letters = "0123456789ABCDEF";
     let color = "#";
     for (let i = 0; i < 6; i++) {
@@ -39,6 +36,7 @@ function getRandomColor() {
     }
     return color;
 };
+
 /* <section className="statistics">
             <h2 className="title">Upload stats</h2>
             <ul className="stat-list">

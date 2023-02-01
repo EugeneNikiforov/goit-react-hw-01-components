@@ -1,11 +1,8 @@
 import PropTypes from 'prop-types';
 // import './Profile.css';
 import css from './Profile.module.scss';
-// import user from '../../data/user';
-// console.log(user);
 
 const Profile = ({ username, tag, location, avatar, stats }) => {
-
     return (
       <div className={css.profile}>
         <div className={css.profile_desc}>
@@ -36,7 +33,6 @@ const Profile = ({ username, tag, location, avatar, stats }) => {
       </div>
     )
 };
-
 export default Profile;
 
 Profile.propTypes = {

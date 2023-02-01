@@ -1,13 +1,41 @@
-.friend_status {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: green;
-}
+.friend {
+    width: 448px;
+    height: 80px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid rgba(67, 19, 179, 0.829);
+    padding-left: 10px;
+    box-shadow: 10px 5px 5px rgba(76, 32, 177, 0.829);
 
-.friend_status_offline {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: red;
+    &:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    &_status {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: green;
+    }
+
+    &_status_offline {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: red;
+    }
+
+    &_avatar {
+        border: 1px solid rgba(67, 19, 179, 0.829);
+        border-radius: 5px;
+        margin-left: 10px;
+        padding: 7px;
+    }
+
+    &_name {
+        font-size: 23px;
+        padding-left: 10px;
+    }
 }

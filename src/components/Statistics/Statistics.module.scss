@@ -3,14 +3,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
     margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: rgb(160, 160, 160);
+    // background-color: rgba(76, 32, 177, 0.829);
+    box-shadow: 10px 5px 5px rgba(110, 110, 110, 0.829);
 
     &_title {
         display: inline-block;
         text-align: center;
         font-size: 25px;
-        padding-bottom: 15px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        color: #fff;
         // font-family: 'Helvetica Neue';
     }
 }
@@ -19,25 +24,30 @@
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 25px;
+    // gap: 25px;
 
     &_item {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 90px;
+        // height: 45px;
     }
 
     &_label {
         text-decoration: none;
         display: inline-block;
-        padding-bottom: 15px;
-        font-size: 24px;
+        padding-top: 15px;
+        font-size: 18px;
+        color: #fff;
     }
     
     &_percentage {
         text-decoration: none;
         display: inline-block;
-        font-size: 28px;
+        font-size: 22px;
+        padding-bottom: 20px;
+        color: #fff;
     }
 }

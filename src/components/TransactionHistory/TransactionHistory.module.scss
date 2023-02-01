@@ -1,3 +1,26 @@
 .transaction {
     font-size: 20px;
+    border-radius: 5px;
+    width: 450px;
+    border-radius: 5px;
+    // border: 1px solid #000;
+    margin-bottom: 20px;
+    box-shadow: 10px 5px 5px rgba(110, 110, 110, 0.829);
+    // background-color: rgba(206, 188, 247, 0.829);
+
+    &_header {
+       height: 50px;
+       font-size: 18px;
+       color: #fff;
+    }
+
+    &_line {
+        height: 50px;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    &_field {
+        border: 1px solid rgb(224, 224, 224);
+    }
 }

@@ -3,7 +3,12 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 40px;
     margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 10px 5px 5px rgba(110, 110, 110, 0.829);
+    max-width: 450px;
 
     &_desc {
         display: flex;
@@ -20,6 +25,7 @@
 
     &_name {
         font-size: 25px;
+        font-weight: 700;
         padding-bottom: 10px;
         padding-top: 20px;
     }
@@ -27,10 +33,12 @@
     &_tag {
         font-size: 18px;
         padding-bottom: 10px;
+        color: rgb(116, 116, 116);
     }
 
     &_location {
         font-size: 21px;
+        color: rgb(116, 116, 116);
         padding-bottom: 30px;
     }
 
@@ -38,7 +46,8 @@
         list-style: none;
         display: flex;
         flex-direction: row;
-        gap: 25px;
+        // gap: 25px;
+        background-color: rgb(212, 207, 207);
     }
 
     &_item {
@@ -46,14 +55,19 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        width: 147px;
+        border: 1px solid #fff;
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 
     &_label {
         font-size: 17px;
-        padding-bottom: 3px;
+        padding-bottom: 8px;
     }
 
     &_quantity {
         font-size: 22px;
+        font-weight: 700;
     }
 }
